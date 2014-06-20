@@ -6,19 +6,14 @@ namespace EasyDataAccess
     /// <summary>
     /// 操作接口定义
     /// </summary>
-    public  interface  IOperationAble<T>
+    public  interface  IOperationAble
     {
         /// <summary>
         /// 执行无查询
         /// </summary>
         /// <returns></returns>
-        int ExecuteNoQuery();
+        int ExecuteNoQuery(string execSql);
 
-        /// <summary>
-        /// 获取列表
-        /// </summary>
-        /// <returns></returns>
-        List<T> Query();
 
 
         /// <summary>
